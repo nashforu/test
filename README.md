@@ -1,3 +1,85 @@
-<p>&lt;/html&gt;</p>
-<p>&lt;/head&gt;<br /> &lt;body&gt;<br /> &lt;p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"&gt;&lt;a href="../../Default.htm#Topics/add_new_plugins.htm"&gt;Open topic with navigation&lt;/a&gt;<br /> &lt;/p&gt;<br /> &lt;h2&gt;&lt;a name="_Toc495570616"&gt;&lt;/a&gt;Add New Plugins &lt;/h2&gt;<br /> &lt;p&gt;AppViewX uses plugins for serving specific functionalities, new plugins can add new features and they can be installed to the application on demand using the following steps.&lt;/p&gt;<br /> &lt;table class="AutoNumber_p_note" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0"&gt;<br /> &lt;col style="width: -45px;" /&gt;<br /> &lt;col style="width: 45px;" /&gt;<br /> &lt;col style="width: auto;" /&gt;<br /> &lt;tr&gt;<br /> &lt;td valign="top" /&gt;<br /> &lt;td class="AutoNumber_li_note" valign="top"&gt;&lt;span&gt;&lt;b&gt;Note:&lt;/b&gt;&lt;/span&gt;<br /> &lt;/td&gt;<br /> &lt;td class="AutoNumber_li_note" valign="top" data-mc-autonum="&amp;lt;b&amp;gt;Note:&amp;lt;/b&amp;gt;"&gt;The following is an example of how to add an avx_subsystem_certificate plugin to an existing installation of AppViewX.&lt;/td&gt;<br /> &lt;/tr&gt;<br /> &lt;/table&gt;<br /> &lt;ol&gt;<br /> &lt;li value="1"&gt;Navigate to the directory &lt;code&gt;&amp;lt;avx_installed_directory&amp;gt;/conf&lt;/code&gt;&lt;/li&gt;<br /> &lt;li value="2"&gt;Navigate to the appviewx.conf file using the following command to add the new plugin to be installed:&lt;/li&gt;<br /> &lt;li class="_nobullet"&gt;&lt;code&gt;$ vi appviewx.conf&lt;/code&gt;<br /> &lt;/li&gt;<br /> &lt;li value="3"&gt;Update the plugin details under ENABLED_PLUGINS and also the individual plugin&lt;br /&gt;detail with the installation Node: Port&lt;/li&gt;<br /> &lt;li class="_nobullet"&gt;<br /> &lt;img src="../Resources/Images/12_2_0_InstallGuide_Word_Import/Administrative Tasks_576x84.png" style="visibility: visible;mso-wrap-style: square;width: 576;height: 84;" /&gt;<br /> &lt;/li&gt;<br /> &lt;li value="4"&gt;When you are done editing the fields, press the Esc key, then type&lt;code&gt; :wq&lt;/code&gt; to save and quit the file.&lt;/li&gt;<br /> &lt;li value="5"&gt;Download the plugins you want to install in the following location with the file name as Plugins.tar.gz.&lt;/li&gt;<br /> &lt;li class="_nobullet"&gt;&lt;code&gt;&amp;lt;user_home_directory&amp;gt;&lt;/code&gt;<br /> &lt;/li&gt;<br /> &lt;li class="_nobullet"&gt;<br /> &lt;img src="../Resources/Images/12_2_0_InstallGuide_Word_Import/Administrative Tasks_1_235x60.png" style="visibility: visible;mso-wrap-style: square;width: 235;height: 60;" /&gt;<br /> &lt;/li&gt;<br /> &lt;li value="6"&gt;Initiate the plugin upgrade process using the following command:&lt;/li&gt;<br /> &lt;li class="_nobullet"&gt;&lt;code&gt;$ appviewx --upgrade plugins &amp;lt;user_home_directory&amp;gt;/ Plugins.tar.gz&lt;/code&gt;<br /> &lt;/li&gt;<br /> &lt;li value="7"&gt;The plugin installation starts.&lt;/li&gt;<br /> &lt;li class="_nobullet"&gt;<br /> &lt;img src="../Resources/Images/12_2_0_InstallGuide_Word_Import/Administrative Tasks_2_456x203.png" style="visibility: visible;mso-wrap-style: square;width: 456;height: 203;" /&gt;<br /> &lt;/li&gt;<br /> &lt;li value="8"&gt;&lt;a href="renew_appviewx_license.htm"&gt;Renew the license&lt;/a&gt; if the plugin is for a new subsystem added using the steps.&lt;/li&gt;<br /> &lt;/ol&gt;<br /> &lt;/body&gt;<br />&lt;/html&gt;</p>
-<p>Check out the <a href="https://ruwix.com/">Rubiks Cube Wiki</a> to learn the solution of the Rubik's Cube and other twisty puzzles like Pyraminx, Square-1, Skewb etc.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../Default.htm#Topics/welcome.htm">Open topic with navigation</a>
+        </p>
+        <h1>Using AppViewX 12.3.0 Online Help</h1>
+        <p>Welcome to AppViewX 12.3.0 Online Help. The topics in this help system describe how to perform basic and administrative tasks using the AppViewX system. </p>
+        <p>You can locate information about specific topics in this help system using any of the following methods:</p>
+        <table style="width: 95%;mc-table-style: url('../Resources/TableStyles/No_Borders.css');" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>
+                            <img src="../Resources/Images/icons/search_tab_html5_161x31.png" title="Search field" alt="Search field" style="width: 161;height: 31;" />
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" colspan="3">
+                        <p>Enter text in the <span class="bold" style="font-weight: normal;">Search</span> field. Use a Boolean <span style="font-family: monospace;">AND</span>&#160;between words to restrict results to topics that contain each of the words:&#160;for example, all topics in the results list for the search string <span style="font-family: monospace;">orphan AND&#160;object AND&#160;report</span> would contain all three of those words. To search for an exact phrase, place quotation marks ("") around the phrase.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>
+                            <img src="../Resources/Images/icons/contents_tab.png" title="Contents tab" alt="Contents tab" />
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" colspan="3">
+                        <p>Click top-level topics and drill-down into each section of the help that you want to view. Most of the top-level book titles on the Contents tab mirror the options in the main menu within AppViewX, making it easy to find the specific area of the help you are looking for. <br /></p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>
+                            <img src="../Resources/Images/icons/index_tab.png" title="Index tab" alt="Index tab" />
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" colspan="3">
+                        <p colspan="3">Click an index entry to jump to the related topic in the help.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>
+                            <img src="../Resources/Images/icons/glossary_tab.png" title="Glossary tab" alt="Glossary tab" />
+                        </p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyB-Column1-Body1" colspan="3">
+                        <p>Click a glossary term to view its definition.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="../Resources/Multimedia/AppViewX_12_3_0_UserGuide.pdf"><img src="../Resources/Images/icons/icon_pdf_18x17.png" title="PDF icon" alt="PDF icon" style="width: 18;height: 17;" /></a> To download a PDF version of this help system, click <a href="../Resources/Multimedia/AppViewX_12_3_0_UserGuide.pdf">here</a>.</p>
+        <hr width="100%" size="0" align="center" />
+        <h1>Frequently Asked Questions:&#160;How do I . . . ?</h1>
+        <ul>
+            <li style="font-size: 10pt;" value="1"><a href="dashboard/dash_share.htm">Share a dashboard</a>
+            </li>
+            <li style="font-size: 10pt;" value="2"><a href="dashboard/dash_config_widget_appview.htm">Configure an Application View widget</a>
+            </li>
+            <li style="font-size: 10pt;" value="3"><a href="dashboard/widget_copy.htm">Copy a widget to another dashboard</a>
+            </li>
+            <li style="font-size: 10pt;" value="4"><a href="account/account_user_create.htm">Create a user</a>
+            </li>
+            <li style="font-size: 10pt;" value="5"><a href="alert/alert_change_settings.htm">Change the settings for an alert type</a>
+            </li>
+            <li style="font-size: 10pt;" value="6"><a href="account/account_role_modify_rw_perms.htm">Modify read/write permissions for components assigned to a role</a>
+            </li>
+            <li style="font-size: 10pt;" value="7"><a href="provisioning/prov_req_create.htm">Create a request</a>
+            </li>
+            <li style="font-size: 10pt;" value="8"><a href="provisioning/prov_req_rollback_work_order.htm">Roll back a work order</a>
+            </li>
+            <li style="font-size: 10pt;" value="9"><a href="provisioning/prov_templ_regex_add.htm">Add a regular expression to the Regex Library</a>
+            </li>
+            <li style="font-size: 10pt;" value="10"><a href="provisioning/prov_templ_helperscript_add.htm">Add a script to the Helper Script Library</a>
+            </li>
+            <li style="font-size: 10pt;" value="11"><a href="inventory/inv_cert_renew.htm">Renew a server or client certificate</a>
+            </li>
+            <li style="font-size: 10pt;" value="12"><a href="inventory/inv_cert_view_topologies.htm">View a certificate topology</a>
+            </li>
+        </ul>
